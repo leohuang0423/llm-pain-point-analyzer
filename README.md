@@ -28,6 +28,19 @@ Large language models (LLMs) are becoming the "first users" of many APIs and too
 - **Symptom**: "Why does this API call fail with these parameters?"
 - **Solution**: Operation pre-check and error diagnosis system
 
+
+## 🤖 **Agent Integration**
+
+This library is **Agent-First**. It is designed to be consumed by LLMs directly.
+
+### **OpenClaw Skill**
+This package includes a `SKILL.md` for direct installation in OpenClaw environments.
+
+### **MCP Support**
+Built-in Model Context Protocol (MCP) server allows any MCP-compatible agent (Claude Desktop, Cursor, OpenClaw) to use these tools.
+
+For detailed agent instructions, see [AGENTS.md](AGENTS.md).
+
 ## 🚀 **Key Features**
 
 ### **Permission Analyzer**
