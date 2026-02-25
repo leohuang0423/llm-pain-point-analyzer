@@ -1,0 +1,79 @@
+{
+  "feishu_doc": {
+    "total_calls": 120,
+    "success_calls": 102,
+    "failure_calls": 18,
+    "avg_response_time": 2.5,
+    "last_updated": "2026-02-24"
+  },
+  "read": {
+    "total_calls": 450,
+    "success_calls": 428,
+    "failure_calls": 22,
+    "avg_response_time": 0.5,
+    "last_updated": "2026-02-24"
+  },
+  "write": {
+    "total_calls": 320,
+    "success_calls": 288,
+    "failure_calls": 32,
+    "avg_response_time": 0.8,
+    "last_updated": "2026-02-24"
+  },
+  "edit": {
+    "total_calls": 180,
+    "success_calls": 158,
+    "failure_calls": 22,
+    "avg_response_time": 1.0,
+    "last_updated": "2026-02-24"
+  },
+  "exec": {
+    "total_calls": 85,
+    "success_calls": 64,
+    "failure_calls": 21,
+    "avg_response_time": 5.0,
+    "last_updated": "2026-02-24"
+  },
+  "web_fetch": {
+    "total_calls": 150,
+    "success_calls": 128,
+    "failure_calls": 22,
+    "avg_response_time": 3.0,
+    "last_updated": "2026-02-24"
+  },
+  "web_search": {
+    "total_calls": 90,
+    "success_calls": 72,
+    "failure_calls": 18,
+    "avg_response_time": 4.0,
+    "last_updated": "2026-02-24"
+  },
+  "cron": {
+    "total_calls": 60,
+    "success_calls": 54,
+    "failure_calls": 6,
+    "avg_response_time": 2.0,
+    "last_updated": "2026-02-24"
+  },
+  "message": {
+    "total_calls": 75,
+    "success_calls": 69,
+    "failure_calls": 6,
+    "avg_response_time": 1.5,
+    "last_updated": "2026-02-24"
+  },
+  "feishu_wiki": {
+    "total_calls": 40,
+    "success_calls": 32,
+    "failure_calls": 8,
+    "avg_response_time": 3.0,
+    "last_updated": "2026-02-24"
+  },
+  "feishu_drive": {
+    "total_calls": 35,
+    "success_calls": 29,
+    "failure_calls": 6,
+    "avg_response_time": 2.8,
+    "last_updated": "2026-02-24"
+  }
+}

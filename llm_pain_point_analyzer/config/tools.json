@@ -1,0 +1,98 @@
+{
+  "feishu_doc": {
+    "description": "飞书文档操作（创建、读取、更新、删除）",
+    "capabilities": ["document_creation", "content_writing", "document_management"],
+    "success_rate": 0.85,
+    "avg_response_time": 2.3,
+    "complexity": "medium",
+    "permissions_required": ["docx:document:write_only", "docx:document:read_only"],
+    "input_requirements": ["title", "content", "folder_token"],
+    "output_type": "document_url",
+    "best_for": ["文档创建", "内容编辑", "文档管理"],
+    "not_for": ["文件上传", "数据处理", "系统操作"]
+  },
+  "feishu_drive": {
+    "description": "飞书云盘操作（文件管理、文件夹操作）",
+    "capabilities": ["file_management", "folder_operations", "storage_access"],
+    "success_rate": 0.90,
+    "avg_response_time": 1.8,
+    "complexity": "low",
+    "permissions_required": ["drive:drive:read_only", "drive:drive:write_only"],
+    "input_requirements": ["folder_token", "file_token", "name"],
+    "output_type": "file_info",
+    "best_for": ["文件列表", "文件夹创建", "文件移动"],
+    "not_for": ["文档编辑", "网页抓取", "命令执行"]
+  },
+  "feishu_wiki": {
+    "description": "飞书知识库操作（节点管理、内容操作）",
+    "capabilities": ["knowledge_management", "wiki_operations", "content_organization"],
+    "success_rate": 0.80,
+    "avg_response_time": 2.5,
+    "complexity": "medium",
+    "permissions_required": ["wiki:wiki:read_only", "wiki:wiki:write_only"],
+    "input_requirements": ["space_id", "node_token", "title"],
+    "output_type": "wiki_node",
+    "best_for": ["知识库管理", "节点操作", "内容组织"],
+    "not_for": ["文档编辑", "文件上传", "系统命令"]
+  },
+  "web_fetch": {
+    "description": "网页内容提取（HTML转markdown/text）",
+    "capabilities": ["web_scraping", "content_extraction", "data_collection"],
+    "success_rate": 0.95,
+    "avg_response_time": 1.5,
+    "complexity": "low",
+    "permissions_required": ["network_access"],
+    "input_requirements": ["url", "extract_mode"],
+    "output_type": "markdown_content",
+    "best_for": ["网页抓取", "内容提取", "数据收集"],
+    "not_for": ["文档编辑", "文件管理", "系统操作"]
+  },
+  "exec": {
+    "description": "执行Shell命令（系统操作、脚本执行）",
+    "capabilities": ["system_operations", "command_execution", "file_operations"],
+    "success_rate": 0.98,
+    "avg_response_time": 0.5,
+    "complexity": "high",
+    "permissions_required": ["system_access"],
+    "input_requirements": ["command", "workdir"],
+    "output_type": "command_output",
+    "best_for": ["系统命令", "脚本执行", "文件操作"],
+    "not_for": ["文档编辑", "网页抓取", "API调用"]
+  },
+  "read": {
+    "description": "读取文件内容（文本文件、图片）",
+    "capabilities": ["file_reading", "content_access", "data_retrieval"],
+    "success_rate": 0.99,
+    "avg_response_time": 0.2,
+    "complexity": "low",
+    "permissions_required": ["file_access"],
+    "input_requirements": ["path", "offset", "limit"],
+    "output_type": "file_content",
+    "best_for": ["文件读取", "内容查看", "数据获取"],
+    "not_for": ["文件写入", "命令执行", "网络操作"]
+  },
+  "write": {
+    "description": "写入文件内容（创建、覆盖文件）",
+    "capabilities": ["file_writing", "content_creation", "data_storage"],
+    "success_rate": 0.95,
+    "avg_response_time": 0.3,
+    "complexity": "low",
+    "permissions_required": ["file_access"],
+    "input_requirements": ["path", "content"],
+    "output_type": "success_status",
+    "best_for": ["文件创建", "内容写入", "数据保存"],
+    "not_for": ["文件读取", "命令执行", "网络操作"]
+  },
+  "edit": {
+    "description": "精确编辑文件内容（查找替换）",
+    "capabilities": ["file_editing", "content_modification", "precise_updates"],
+    "success_rate": 0.90,
+    "avg_response_time": 0.4,
+    "complexity": "medium",
+    "permissions_required": ["file_access"],
+    "input_requirements": ["path", "oldText", "newText"],
+    "output_type": "success_status",
+    "best_for": ["文件编辑", "内容修改", "精确更新"],
+    "not_for": ["文件创建", "批量操作", "网络操作"]
+  }
+}

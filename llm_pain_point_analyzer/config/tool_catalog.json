@@ -1,0 +1,119 @@
+{
+  "document_management": {
+    "feishu_doc": {
+      "description": "飞书文档操作",
+      "capabilities": ["create", "read", "write", "update", "list"],
+      "complexity": "medium",
+      "success_rate": 0.85,
+      "avg_response_time": 2.5,
+      "requirements": ["docx:document:write_only"]
+    },
+    "feishu_wiki": {
+      "description": "飞书知识库操作",
+      "capabilities": ["create", "read", "search", "move"],
+      "complexity": "medium",
+      "success_rate": 0.80,
+      "avg_response_time": 3.0,
+      "requirements": ["wiki:wiki:read_only"]
+    }
+  },
+  "file_operations": {
+    "read": {
+      "description": "读取文件内容",
+      "capabilities": ["read_file", "text_file", "image_file"],
+      "complexity": "low",
+      "success_rate": 0.95,
+      "avg_response_time": 0.5,
+      "requirements": ["file_access"]
+    },
+    "write": {
+      "description": "写入文件内容",
+      "capabilities": ["create_file", "overwrite_file"],
+      "complexity": "low",
+      "success_rate": 0.90,
+      "avg_response_time": 0.8,
+      "requirements": ["file_access"]
+    },
+    "edit": {
+      "description": "编辑文件内容",
+      "capabilities": ["edit_file", "replace_text"],
+      "complexity": "low",
+      "success_rate": 0.88,
+      "avg_response_time": 1.0,
+      "requirements": ["file_access"]
+    },
+    "feishu_drive": {
+      "description": "飞书云盘操作",
+      "capabilities": ["list", "create", "move", "delete"],
+      "complexity": "medium",
+      "success_rate": 0.82,
+      "avg_response_time": 2.8,
+      "requirements": ["drive:drive:read_only"]
+    }
+  },
+  "system_operations": {
+    "exec": {
+      "description": "执行系统命令",
+      "capabilities": ["shell_command", "script_execution"],
+      "complexity": "high",
+      "success_rate": 0.75,
+      "avg_response_time": 5.0,
+      "requirements": ["system_access"],
+      "risk_level": "high"
+    },
+    "process": {
+      "description": "管理后台进程",
+      "capabilities": ["process_management", "background_tasks"],
+      "complexity": "high",
+      "success_rate": 0.78,
+      "avg_response_time": 3.5,
+      "requirements": ["system_access"]
+    }
+  },
+  "network_operations": {
+    "web_fetch": {
+      "description": "获取网页内容",
+      "capabilities": ["fetch_url", "extract_content"],
+      "complexity": "medium",
+      "success_rate": 0.85,
+      "avg_response_time": 3.0,
+      "requirements": ["network_access"]
+    },
+    "web_search": {
+      "description": "网页搜索",
+      "capabilities": ["search_web", "real_time_info"],
+      "complexity": "medium",
+      "success_rate": 0.80,
+      "avg_response_time": 4.0,
+      "requirements": ["network_access", "api_key_required"]
+    }
+  },
+  "scheduling_operations": {
+    "cron": {
+      "description": "定时任务管理",
+      "capabilities": ["schedule_tasks", "reminders"],
+      "complexity": "medium",
+      "success_rate": 0.90,
+      "avg_response_time": 2.0,
+      "requirements": ["system_access"]
+    }
+  },
+  "communication_operations": {
+    "message": {
+      "description": "发送消息",
+      "capabilities": ["send_message", "notifications"],
+      "complexity": "low",
+      "success_rate": 0.92,
+      "avg_response_time": 1.5,
+      "requirements": ["messaging_access"]
+    },
+    "tts": {
+      "description": "文本转语音",
+      "capabilities": ["text_to_speech", "audio_generation"],
+      "complexity": "low",
+      "success_rate": 0.88,
+      "avg_response_time": 2.5,
+      "requirements": ["audio_access"]
+    }
+  }
+}
